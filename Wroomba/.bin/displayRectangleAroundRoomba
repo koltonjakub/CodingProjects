@@ -1,0 +1,1 @@
+        pg.draw.rect(self.display.surface, (255, 0, 0), (*self.roomba.position, *self.roomba.icon.get_size()), 2)

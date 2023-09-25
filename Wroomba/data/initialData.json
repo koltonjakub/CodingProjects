@@ -1,0 +1,15 @@
+{
+  "initialDisplayDimensions": [1200, 700],
+
+  "initialBackgroundDimensions": [1200, 700],
+  "initialBackgroundPosition": [0, 0],
+
+  "initialRoombaDimensions": [70, 70],
+  "initialRoombaPosition": [100, 100],
+  "initialRoombaAngle": 0,
+  "initialRoombaRadius": 35,
+
+  "initialTitle": "Wroomba",
+  "initialFlag": 16,
+  "initialFPS": 60
+}

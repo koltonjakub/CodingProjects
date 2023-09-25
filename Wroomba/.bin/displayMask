@@ -1,0 +1,26 @@
+        # Inplace debug problems with resizing window
+        (x, y) = self.roomba.position
+
+        self.display.blit(self.redDot, (x, y))  # left upper corner
+
+        y += self.roomba.height
+        self.display.blit(self.redDot, (x, y))  # left lower corner
+
+        x += self.roomba.width
+        self.display.blit(self.redDot, (x, y))  # right lower corner
+
+        y -= self.roomba.height
+        self.display.blit(self.redDot, (x, y))  # right upper corner
+
+        for (x, y) in self.engine.mask:  # draw scaled mask
+            if x == 0 or y == 0:
+                x += self.engine.roomba.x
+                y += self.engine.roomba.y
+
+                x *= self.roomba.horizontalRatio
+                y *= self.roomba.verticalRatio
+
+                x = int(x)
+                y = int(y)
+
+                self.display.blit(self.redDot, (x, y))

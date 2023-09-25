@@ -1,0 +1,38 @@
+[
+  {
+    "title": "To niemożliwe",
+    "subtitle": "a jednak!",
+    "author": "Jan Korycki",
+    "price": 14.29,
+    "publisher": "Wydawnictwo Literackie",
+    "storage": "AHN"
+  },
+  {
+    "title": "To niemożliwe 2",
+    "author": "Jan Korycki",
+    "price": 21.37,
+    "publisher": "Wydawnictwo Literackie",
+    "storage": "AHN"
+  },
+  {
+    "title": "To niemożliwe 3",
+    "author": "Jan Korycki",
+    "price": 21.37,
+    "publisher": "Wydawnictwo Literackie",
+    "storage": "AHN"
+  },
+  {
+    "title": "Jestem. Robotem.",
+    "author": "Adam Wielecki",
+    "price": 49.99,
+    "publisher": "Sonia Draga",
+    "storage": "ANW"
+  },
+  {
+    "title": "Fizyka",
+    "author": "Andrzej Dragan",
+    "price": 27.99,
+    "publisher": "Wydawnictwo Uniwersytetu Warszawskiego",
+    "storage": "ANW"
+  }
+]

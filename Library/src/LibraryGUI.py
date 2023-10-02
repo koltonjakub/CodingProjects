@@ -40,7 +40,9 @@ class BookTable(QWidget):
         self.publisherPos: int = 4
         self.storagePos: int = 5
 
-        grid.addWidget(QPushButton('back'), self.buttonBarPosition, 0)
+        self.backButton = QPushButton('back')
+        self.connectBackBtn()
+        grid.addWidget(self.backButton, self.buttonBarPosition, 0)
 
         titleLbl = QLabel('title')
         subtitleLbl = QLabel('subtitle')
@@ -80,6 +82,12 @@ class BookTable(QWidget):
 
         self.setLayout(grid)
 
+    def connectBackBtn(self) -> None:
+        self.backButton.clicked.connect(self.backBtnClicked)
+
+    def backBtnClicked(self):
+        print(f'back called')
+
     @property
     def bookList(self) -> List[Book]:
         return self.__bookList
@@ -110,4 +118,8 @@ class LibraryManager(QMainWindow):
 
     def initUI(self) -> None:
         self.bookTable = BookTable(bookList=self.data.books)
+
         self.setCentralWidget(self.bookTable)
+
+    def update(self) -> None:
+        print('update called')
